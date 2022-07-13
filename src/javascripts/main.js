@@ -43,9 +43,9 @@ function searchMovies(event) {
     let count = 0
     for (let m of movies) {
         if (m.title.toUpperCase().indexOf(input.toUpperCase()) == -1) {
-            document.querySelector('#m${m.id}').classList.add('d-none')
+            document.querySelector(`#m${m.id}`).classList.add('d-none')
         } else {
-            document.querySelector('#m${m.id}').classList.remove('d-none')
+            document.querySelector(`#m${m.id}`).classList.remove('d-none')
             count++
         }
     }
